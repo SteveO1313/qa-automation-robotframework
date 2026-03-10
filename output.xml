@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.6 on darwin)" generated="2026-03-10T15:28:00.938029" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc01" source="/Users/steve-o/example/tc01.robot">
+<test id="s1-t1" name="TC01" line="5">
+<kw name="Open training website" owner="common">
+<kw name="New Browser" owner="Browser">
+<msg time="2026-03-10T15:28:01.389933" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/steve-o/example/browser/traces/temp/144cd294-1fa9-4d9f-8f6f-4e4f46ae9650"}</msg>
+<msg time="2026-03-10T15:28:01.486946" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js using at 127.0.0.1:54988</msg>
+<msg time="2026-03-10T15:28:05.068703" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/steve-o/example/browser/traces/temp/144cd294-1fa9-4d9f-8f6f-4e4f46ae9650"}</msg>
+<arg>chromium</arg>
+<arg>${FALSE}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2026-03-10T15:28:01.386784" elapsed="3.682445"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2026-03-10T15:28:16.386971" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2026-03-10T15:28:16.387262" level="INFO">See also file:///Users/steve-o/example/playwright-log.txt for additional details.</msg>
+<msg time="2026-03-10T15:28:16.388631" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "http://192.8.8.124:8000/uat/home.html", waiting until "load"
+</msg>
+<arg>http://192.8.8.124:8000/${ENV}/home.html</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2026-03-10T15:28:05.070029" elapsed="11.336464">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "http://192.8.8.124:8000/uat/home.html", waiting until "load"
+</status>
+</kw>
+<status status="FAIL" start="2026-03-10T15:28:01.385687" elapsed="15.021539">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "http://192.8.8.124:8000/uat/home.html", waiting until "load"
+</status>
+</kw>
+<if>
+<branch type="IF" condition="'${LANG}' == &quot;th&quot;">
+<kw name="Click" owner="Browser">
+<arg>css=[data-lang="th"]</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="NOT RUN" start="2026-03-10T15:28:16.427673" elapsed="0.013358"/>
+</kw>
+<status status="NOT RUN" start="2026-03-10T15:28:16.410005" elapsed="0.031458"/>
+</branch>
+<status status="NOT RUN" start="2026-03-10T15:28:16.409786" elapsed="0.031882"/>
+</if>
+<kw name="Go to Product menu" owner="top_bar_page">
+<status status="NOT RUN" start="2026-03-10T15:28:16.442867" elapsed="0.000273"/>
+</kw>
+<kw name="Go to login page button" owner="product_page">
+<status status="NOT RUN" start="2026-03-10T15:28:16.444155" elapsed="0.000330"/>
+</kw>
+<kw name="Login with username and password" owner="login_feature">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="NOT RUN" start="2026-03-10T15:28:16.446207" elapsed="0.000246"/>
+</kw>
+<msg time="2026-03-10T15:28:16.534060" level="INFO">Switching context to context=f9f53369-dcb8-4550-beeb-4656ed06d2b6 in CURRENT</msg>
+<msg time="2026-03-10T15:28:16.545600" level="INFO">Successfully changed active context: context=f9f53369-dcb8-4550-beeb-4656ed06d2b6</msg>
+<msg time="2026-03-10T15:28:16.562820" level="INFO">Successfully closed Context</msg>
+<status status="FAIL" start="2026-03-10T15:28:01.383974" elapsed="15.080207">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "http://192.8.8.124:8000/uat/home.html", waiting until "load"
+</status>
+</test>
+<status status="FAIL" start="2026-03-10T15:28:00.940746" elapsed="15.627021"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tc01" id="s1" pass="0" fail="1" skip="0">Tc01</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

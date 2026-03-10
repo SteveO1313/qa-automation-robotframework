@@ -1,0 +1,52 @@
+{"level":30,"time":"2026-03-10T08:28:02.718Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Listening on 127.0.0.1:54988"}
+{"level":30,"time":"2026-03-10T08:28:03.818Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2026-03-10T08:28:05.066Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Adding browser to stack: chromium, version: 145.0.7632.6"}
+{"level":30,"time":"2026-03-10T08:28:05.067Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Adding 0 contexts to browser"}
+{"level":30,"time":"2026-03-10T08:28:05.067Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"End of node method newBrowser"}
+{"level":30,"time":"2026-03-10T08:28:05.075Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method newPage"}
+{"level":30,"time":"2026-03-10T08:28:05.075Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"currentBrowser: {\"name\":\"chromium\",\"browser\":{\"_type\":\"Browser\",\"_guid\":\"browser@17c11d5be6954fa1c3e006bacb8c10ee\"},\"headless\":false,\"_contextStack\":[],\"id\":\"browser=2ac3dc33-3816-4689-8663-3e449ac941bf\"}"}
+{"level":30,"time":"2026-03-10T08:28:05.089Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Setting default timeout for context context=f9f53369-dcb8-4550-beeb-4656ed06d2b6 to 10000"}
+{"level":30,"time":"2026-03-10T08:28:05.089Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Changed active context: context=f9f53369-dcb8-4550-beeb-4656ed06d2b6"}
+{"level":30,"time":"2026-03-10T08:28:06.348Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Video path: undefined"}
+{"level":30,"time":"2026-03-10T08:28:06.349Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Changed active page"}
+{"level":30,"time":"2026-03-10T08:28:16.358Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Error of node method  newPage"}
+================= Original suppressed error =================
+page.goto: Timeout 10000ms exceeded.
+Call log:
+[2m  - navigating to "http://192.8.8.124:8000/uat/home.html", waiting until "load"[22m
+
+    at newPage (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:13017:18)
+    at async PlaywrightServer.newPage (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:13635:28) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2026-03-10T08:28:16.383Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11096:11)
+    at takeScreenshot (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:11152:3)
+    at PlaywrightServer.takeScreenshot (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/index.js:13635:34)
+    at Object.onReceiveHalfClose (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server.js:1464:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:595:31)
+    at BaseServerInterceptingCall.handleEndEvent (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:635:14)
+    at ServerHttp2Stream.<anonymous> (/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/Browser/wrapper/node_modules/@grpc/grpc-js/build/src/server-interceptors.js:394:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2026-03-10T08:28:16.384Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Error of node method  takeScreenshot"}
+{"level":30,"time":"2026-03-10T08:28:16.519Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.520Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.525Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.525Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.530Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.531Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.537Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.538Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.543Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Changed active context: context=f9f53369-dcb8-4550-beeb-4656ed06d2b6"}
+{"level":30,"time":"2026-03-10T08:28:16.546Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method closeContext"}
+{"level":30,"time":"2026-03-10T08:28:16.558Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"End of node method closeContext"}
+{"level":30,"time":"2026-03-10T08:28:16.596Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.596Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2026-03-10T08:28:16.660Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2026-03-10T08:28:16.855Z","pid":33827,"hostname":"Tosapols-MacBook-Air.local","msg":"End of node method closeAllBrowsers"}
