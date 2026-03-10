@@ -16,3 +16,9 @@ This project demonstrates web automation testing using Robot Framework.
 ## Run Test
 
 robot -v ENV:uat -v LANG:th tc01.robot
+
+## Automation Test Run
+
+Example of Robot Framework test execution.
+
+![Robot Test](images/robot-test-run.png)
